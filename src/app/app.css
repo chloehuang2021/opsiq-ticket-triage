@@ -1,0 +1,59 @@
+.ticket-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.ticket-card button {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.delete-btn,
+.progress-btn,
+.resolved-btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.progress-btn {
+  background-color: #fd7e14;
+}
+
+.resolved-btn {
+  background-color: #198754;
+}
+
+
+/*dashboard*/
+.dashboard {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.dashboard-card {
+  border: 1px solid #ddd;
+  padding: 12px 18px;
+  border-radius: 8px;
+  min-width: 120px;
+  text-align: center;
+}
+
+.dashboard-card h3 {
+  margin: 0 0 8px 0;
+}
+
+.dashboard-card p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
