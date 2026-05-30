@@ -1,59 +1,50 @@
-# OpsiqFrontend
+# OpsIQ Ticket Triage
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.11.
+A full-stack ticket management application built with Angular, Spring Boot, and PostgreSQL.
 
-## Development server
+## Features
 
-To start a local development server, run:
+* AI-powered ticket analysis
+* Ticket creation and management
+* Status updates (Open, In Progress, Resolved)
+* Ticket search
+* Status filtering
+* Dashboard metrics
+* Created and updated timestamps
 
-```bash
-ng serve
-```
+## Tech Stack
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Frontend
 
-## Code scaffolding
+* Angular
+* TypeScript
+* HTML/CSS
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Backend
 
-```bash
-ng generate component component-name
-```
+* Spring Boot
+* Java
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Database
 
-```bash
-ng generate --help
-```
+* PostgreSQL
 
-## Building
+## Current Functionality
 
-To build the project run:
+* Create tickets
+* Analyze tickets with AI rules engine
+* Update ticket status
+* Delete tickets
+* Search tickets by title
+* Filter tickets by status
+* Dashboard statistics
+* Automatic timestamp tracking
 
-```bash
-ng build
-```
+## Future Enhancements
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+* Color scheme 
+* Sort tickets by date
+* Docker support
+* AWS deployment
+* User authentication
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
