@@ -28,6 +28,7 @@ export class App {
   message = '';
   selectedStatus = 'ALL';
   searchText = '';
+  sortOption = 'newest';
 
   analyzeTicket() {
     const ticket = {
@@ -104,6 +105,35 @@ export class App {
 
       return statusMatch && searchMatch;
     });
+  }
+
+  //Ticket Sorting Function: Allow users to sort tickets by date or priority
+  get sortedTickets() {
+    const tickets = [...this.filteredTickets];
+
+    if (this.sortOption === 'newest') {
+      return tickets.sort((a, b) => b.id - a.id);
+    }
+
+    if (this.sortOption === 'oldest') {
+      return tickets.sort((a, b) => a.id - b.id);
+    }
+
+    const priorityOrder: any = {
+      HIGH: 3,
+      MEDIUM: 2,
+      LOW: 1,
+    };
+
+    if (this.sortOption === 'priorityHigh') {
+      return tickets.sort((a, b) => priorityOrder[b.priority] - priorityOrder[a.priority]);
+    }
+
+    if (this.sortOption === 'priorityLow') {
+      return tickets.sort((a, b) => priorityOrder[a.priority] - priorityOrder[b.priority]);
+    }
+
+    return tickets;
   }
 
   //Building the dashboard

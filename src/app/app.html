@@ -64,28 +64,43 @@
 
 
 <h2>Saved Tickets</h2>
+
+
 <!--Ticket Status Filter Function：Allow users to filter tickets by status -->
-<label>Filter:</label>
-<select [(ngModel)]="selectedStatus">
-  <option value="ALL">All</option>
-  <option value="OPEN">Open</option>
-  <option value="IN_PROGRESS">In Progress</option>
-  <option value="RESOLVED">Resolved</option>
-</select>
+<div class="control-section">
+  <label>Filter:</label>
+  <select [(ngModel)]="selectedStatus">
+    <option value="ALL">All</option>
+    <option value="OPEN">Open</option>
+    <option value="IN_PROGRESS">In Progress</option>
+    <option value="RESOLVED">Resolved</option>
+  </select>
+</div>
 
 <!--Ticket Search Function：Allow users to search by ticket title-->
-<br><br>
+<div class="control-section">
+  <label>Search:</label>
+  <input
+    type="text"
+    [(ngModel)]="searchText"
+    placeholder="Search ticket title..."
+  />
+</div>
+<!-- Ticket Sort Function: Allow users to filter tickets by status -->
+<div class="control-section">
+  <label>Sort:</label>
+  <select [(ngModel)]="sortOption">
+    <option value="newest">Newest First</option>
+    <option value="oldest">Oldest First</option>
+    <option value="priorityHigh">Priority: High to Low</option>
+    <option value="priorityLow">Priority: Low to High</option>
+  </select>
+</div>
 
-<label>Search:</label>
-<input
-  type="text"
-  [(ngModel)]="searchText"
-  placeholder="Search ticket title..."
-/>
 
 <p class="message">{{ message }}</p>
 
-<div *ngFor="let ticket of filteredTickets" class="ticket-card">
+<div *ngFor="let ticket of sortedTickets" class="ticket-card">
   <h3>{{ ticket.title }}</h3>
 
   <p><strong>Priority:</strong> {{ ticket.priority }}</p>
