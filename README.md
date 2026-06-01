@@ -1,6 +1,6 @@
 # OpsIQ Ticket Triage
 
-A full-stack ticket management application built with Angular, Spring Boot, and PostgreSQL.
+A full-stack ticket management application with AI-powered ticket analysis, built using Angular, Spring Boot, and PostgreSQL.
 
 ## Features
 
