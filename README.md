@@ -4,13 +4,23 @@ A full-stack ticket management application with AI-powered ticket analysis, buil
 
 ## Features
 
-* AI-powered ticket analysis
+* AI-powered ticket analysis and categorization
 * Ticket creation and management
-* Status updates (Open, In Progress, Resolved)
+* Dashboard metrics
 * Ticket search
 * Status filtering
-* Dashboard metrics
+* Status updates (Open, In Progress, Resolved)
 * Created and updated timestamps
+
+## Architecture
+
+Frontend (Angular)
+        |
+        v
+Backend (Spring Boot REST API)
+        |
+        v
+PostgreSQL Database
 
 ## Tech Stack
 
@@ -42,9 +52,15 @@ A full-stack ticket management application with AI-powered ticket analysis, buil
 
 ## Future Enhancements
 
-* Color scheme 
 * Sort tickets by date
 * Docker support
 * AWS deployment
 * User authentication
 
+
+## Screenshots
+Dashboard Screenshot
+
+Ticket List Screenshot
+
+AI Analysis Screenshot
