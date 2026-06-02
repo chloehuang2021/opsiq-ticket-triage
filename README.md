@@ -2,10 +2,20 @@
 
 A full-stack ticket management application with AI-powered ticket analysis, built using Angular, Spring Boot, and PostgreSQL.
 
-# 🚀Live Demo:
-(https://youtu.be/LJh7dDF6jPY)
+# 🚀🎥 Demo Video:
+https://youtu.be/LJh7dDF6jPY
 
-----------------------------------------------------
+
+## Screenshots
+
+Dashboard Screenshot
+<img width="1252" height="268" alt="image" src="https://github.com/user-attachments/assets/2a1351e0-cd8d-403f-a498-5173ff118359" />
+
+Ticket Management Screenshot
+
+AI Analysis Screenshot
+
+
 
 ## Related Repositories
 
@@ -71,12 +81,5 @@ PostgreSQL Database
 * User authentication
 
 
-## Screenshots
-
-Dashboard Screenshot
-
-Ticket List Screenshot
-
-AI Analysis Screenshot
 
 
