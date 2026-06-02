@@ -8,12 +8,16 @@ https://youtu.be/LJh7dDF6jPY
 
 ## Screenshots
 
+AI Analysis Screenshot
+<img width="1988" height="1186" alt="image" src="https://github.com/user-attachments/assets/19882878-fe8c-4ad4-ae9a-1b6da727119e" />
+
 Dashboard Screenshot
 <img width="1252" height="268" alt="image" src="https://github.com/user-attachments/assets/2a1351e0-cd8d-403f-a498-5173ff118359" />
 
 Ticket Management Screenshot
+<img width="1830" height="1356" alt="image" src="https://github.com/user-attachments/assets/63cd2dfa-2428-4e62-bc37-a8e0f7996597" />
 
-AI Analysis Screenshot
+
 
 
 
