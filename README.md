@@ -31,22 +31,46 @@ https://github.com/chloehuang2021/opsiq-ticket-triage-backend
 
 ## Features
 
-* AI-powered ticket analysis and categorization
-* Ticket creation and management
-* Dashboard metrics
-* Ticket search
-* Status filtering
-* Status updates (Open, In Progress, Resolved)
-* Created and updated timestamps
+### AI-Powered Ticket Analysis
+
+- Automatic ticket categorization
+- Priority assignment (High, Medium, Low)
+- Ticket summary generation
+- Suggested resolution steps
+
+### Ticket Management
+
+- Create support tickets
+- View all tickets
+- Update ticket status
+- Delete tickets
+
+### Search, Filter, and Sort
+
+- Search tickets by title
+- Filter by status
+- Sort by date
+- Sort by priority
+
+### Dashboard Metrics
+
+- Total tickets
+- Open tickets
+- In Progress tickets
+- Resolved tickets
+
+### Audit Information
+
+- Created timestamp
+- Updated timestamp
+
 
 ## Architecture
 
-Frontend (Angular)
-        |
-        v
-Backend (Spring Boot REST API)
-        |
-        v
+Frontend (Angular) -> 
+        
+Backend (Spring Boot REST API) -> 
+        
 PostgreSQL Database
 
 ## Tech Stack
@@ -61,10 +85,12 @@ PostgreSQL Database
 
 * Spring Boot
 * Java
+* REST API
 
 ### Database
 
 * PostgreSQL
+* Spring Data JPA
 
 ## Current Functionality
 
@@ -77,13 +103,16 @@ PostgreSQL Database
 * Dashboard statistics
 * Automatic timestamp tracking
 
+## API Endpoints
+
 ## Future Enhancements
 
-* Sort tickets by date
 * Docker support
 * AWS deployment
 * User authentication
+* Advanced AI integration
+* Ticket assignment workflow
 
+## Author
 
-
-
+Chloe Huang
