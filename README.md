@@ -7,6 +7,7 @@ The application automatically analyzes incoming support tickets, categorizes iss
 # 🚀🎥 Demo Video:
 https://youtu.be/LJh7dDF6jPY
 
+---
 
 ## Screenshots
 
