@@ -21,7 +21,9 @@ https://youtu.be/LJh7dDF6jPY
 
 #### Ticket Management Screenshot
 
-<img width="1830" height="1356" alt="image" src="https://github.com/user-attachments/assets/63cd2dfa-2428-4e62-bc37-a8e0f7996597" />
+<p align="center">
+  <img src="screenshots/tickets.png" width="700">
+</p>
 
 
 
