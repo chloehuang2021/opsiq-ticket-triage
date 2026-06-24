@@ -140,4 +140,4 @@ https://github.com/chloehuang2021/opsiq-ticket-triage-backend
 
 ## Author
 
-Chloe Huang
+Weiyi "Chloe" Huang
