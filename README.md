@@ -72,20 +72,86 @@ https://github.com/chloehuang2021/opsiq-ticket-triage-backend
 ## Architecture
 
 ```text
-┌──────────────────┐
-│ Angular Frontend │
-└────────┬─────────┘
-         │ HTTP
-         ▼
-┌──────────────────┐
-│ Spring Boot API  │
-└────────┬─────────┘
-         │ JPA
-         ▼
-┌──────────────────┐
-│   PostgreSQL     │
-└──────────────────┘
+## Architecture
+
 ```
+                 HTTP
+┌────────────────────────┐
+│    Angular Frontend    │
+└────────────┬───────────┘
+             │
+             ▼
+┌────────────────────────┐
+│ Spring Boot Backend    │
+│ (Docker Container)     │
+└────────────┬───────────┘
+             │
+       Spring Data JPA
+             │
+             ▼
+┌────────────────────────┐
+│ PostgreSQL             │
+│ (Docker Container)     │
+└────────────────────────┘
+```
+
+## Docker Support
+
+The backend application is fully containerized using Docker and Docker Compose for simplified local development and deployment.
+
+### Prerequisites
+
+* Docker Desktop
+* Docker Compose
+
+### Start the Backend and Database
+
+```bash
+docker compose up -d --build
+```
+
+This command will:
+
+* Build the Spring Boot backend image
+* Start a PostgreSQL container
+* Start the backend container
+* Automatically connect the backend to the PostgreSQL database
+
+### Verify the API
+
+```bash
+curl http://localhost:8080/api/tickets
+```
+
+Expected response:
+
+```json
+[]
+```
+
+### Stop the Application
+
+```bash
+docker compose down
+```
+
+### Docker Architecture
+
+```
+┌───────────────────────┐
+│ Spring Boot Backend   │
+│   Docker Container    │
+└──────────┬────────────┘
+           │
+     Docker Network
+           │
+┌──────────▼────────────┐
+│ PostgreSQL Container  │
+└───────────────────────┘
+```
+
+
+
 
 ## Tech Stack
 
@@ -105,6 +171,20 @@ https://github.com/chloehuang2021/opsiq-ticket-triage-backend
 
 * PostgreSQL
 * Spring Data JPA
+
+### DevOps
+
+* Docker
+* Docker Compose
+
+### Deployment
+
+* Dockerized the Spring Boot backend using Docker
+* Orchestrated the backend and PostgreSQL services with Docker Compose
+* Configured environment-based database connection using Docker environment variables
+* Enabled one-command local deployment with `docker compose up -d --build`
+
+
 
 ## Current Functionality
 
@@ -131,12 +211,14 @@ https://github.com/chloehuang2021/opsiq-ticket-triage-backend
 
 
 ## Future Enhancements
-
-* Docker support
+* Integrate a production LLM API for AI-powered ticket analysis
+* Containerize the Angular frontend
 * AWS deployment
-* User authentication
 * Advanced AI integration
-* Ticket assignment workflow
+* Implement user authentication and authorization
+* Add ticket assignment and workflow management
+* Support file attachments and comments
+
 
 ## Author
 
