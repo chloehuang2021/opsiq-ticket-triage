@@ -71,10 +71,8 @@ https://github.com/chloehuang2021/opsiq-ticket-triage-backend
 
 ## Architecture
 
-```text
-## Architecture
-
 ```
+
                  HTTP
 ┌────────────────────────┐
 │    Angular Frontend    │
