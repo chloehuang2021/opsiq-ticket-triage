@@ -38,29 +38,27 @@
 
 <!--Dashboard-->
 <h2>Dashboard</h2>
-
 <div class="dashboard">
-  <div class="dashboard-card">
+  <div class="dashboard-card total-card">
     <h3>Total</h3>
     <p>{{ totalCount }}</p>
   </div>
 
-  <div class="dashboard-card">
+  <div class="dashboard-card open-card">
     <h3>Open</h3>
     <p>{{ openCount }}</p>
   </div>
 
-  <div class="dashboard-card">
+  <div class="dashboard-card progress-card">
     <h3>In Progress</h3>
     <p>{{ inProgressCount }}</p>
   </div>
 
-  <div class="dashboard-card">
+  <div class="dashboard-card resolved-card">
     <h3>Resolved</h3>
     <p>{{ resolvedCount }}</p>
   </div>
 </div>
-
 
 
 <h2>Saved Tickets</h2>
@@ -105,8 +103,18 @@
 
   <p><strong>Priority:</strong> {{ ticket.priority }}</p>
   <p><strong>Category:</strong> {{ ticket.category }}</p>
+
+  <p><strong>Summary:</strong> {{ ticket.summary }}</p>
+  <p>{{ ticket.summary }}</p>
+
   <p><strong>Status:</strong> {{ ticket.status }}</p>
 
+  <p><strong>Suggested Steps:</strong></p>
+  <div class="suggested-steps">
+    {{ ticket.suggestedSteps }}
+  </div>
+
+  
   <!--Display ticket timestamps -->
   <p>
     <strong>Created:</strong>

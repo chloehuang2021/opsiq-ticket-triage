@@ -11,6 +11,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.css',
 })
 export class App {
+  // Centralize API endpoints to avoid scattered environment-specific changes.
+  private readonly ticketApiUrl = 'http://localhost:8081/api/tickets';
+  private readonly aiApiUrl = 'http://localhost:8081/api/ai/analyze';
+
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
@@ -39,7 +43,7 @@ export class App {
     };
 
     this.http
-      .post<any>('http://localhost:8080/api/tickets/analyze', ticket)
+      .post<any>(this.aiApiUrl, ticket)
       .subscribe((response) => {
         this.category = response.category;
         this.priority = response.priority;
@@ -60,42 +64,34 @@ export class App {
       suggestedSteps: this.suggestedSteps,
     };
 
-    this.http.post<any>('http://localhost:8080/api/tickets', ticket).subscribe((response) => {
+    this.http.post<any>(this.ticketApiUrl, ticket).subscribe((response) => {
       this.message = `Ticket saved with ID: ${response.id}`;
       this.loadTickets();
     });
   }
 
   loadTickets() {
-    this.http.get<any[]>('http://localhost:8080/api/tickets').subscribe((response) => {
+    this.http.get<any[]>(this.ticketApiUrl).subscribe((response) => {
       console.log('Loaded tickets:', response);
       this.tickets = response;
     });
   }
 
-  /**TEMP
+
   deleteTicket(id: number) {
-    this.http.delete(`http://localhost:8080/api/tickets/${id}`).subscribe(() => {
-      this.loadTickets();
-    });
-  }
-    **/
-  deleteTicket(id: number) {
-    this.http.delete(`http://localhost:8080/api/tickets/${id}`).subscribe(() => {
+    this.http.delete(`${this.ticketApiUrl}/${id}`).subscribe(() => {
       this.message = `Ticket ${id} deleted successfully`;
       this.tickets = this.tickets.filter((ticket) => ticket.id !== id);
     });
   }
 
   updateStatus(id: number, status: string) {
-    this.http
-      .patch<any>(`http://localhost:8080/api/tickets/${id}/status`, { status })
-      .subscribe((response) => {
-        this.message = `Ticket ${id} updated to ${response.status}`;
-
-        this.loadTickets();
-      });
+    this.http.patch<any>(`${this.ticketApiUrl}/${id}/status`, { status }).subscribe((response) => {
+      this.message = `Ticket ${id} updated to ${response.status}`;
+      this.loadTickets();
+    });
   }
+
   //Ticket Status Filter Function：Allow users to filter tickets by status
   get filteredTickets() {
     return this.tickets.filter((ticket) => {

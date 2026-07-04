@@ -7,8 +7,6 @@
 
 .control-section label {
   width: 100px;
-  font-size: 20px;
-  font-weight: 500;
 }
 
 .control-section input,
@@ -56,6 +54,11 @@
   background-color: #198754;
 }
 
+/* Preserve AI-generated line breaks without using <pre> styling. */
+.suggested-steps {
+  white-space: pre-line;
+  margin-top: 4px;
+}
 
 /*dashboard*/
 .dashboard {
@@ -65,19 +68,40 @@
 }
 
 .dashboard-card {
-  border: 1px solid #ddd;
-  padding: 12px 18px;
-  border-radius: 8px;
-  min-width: 120px;
+  padding: 16px 22px;
+  border-radius: 10px;
+  min-width: 130px;
   text-align: center;
+  color: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
 }
 
 .dashboard-card h3 {
   margin: 0 0 8px 0;
+  font-size: 16px;
 }
 
 .dashboard-card p {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   margin: 0;
 }
+
+.total-card {
+  background-color: #0d6efd;
+}
+
+.open-card {
+  background-color: #dc3545;
+}
+
+.progress-card {
+  background-color: #fd7e14;
+}
+
+.resolved-card {
+  background-color: #198754;
+}
+
+
+
