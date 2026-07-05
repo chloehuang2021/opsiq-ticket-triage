@@ -30,6 +30,7 @@ export class App {
   suggestedSteps = '';
   tickets: any[] = [];
   message = '';
+  isSaving = false;
   selectedStatus = 'ALL';
   searchText = '';
   sortOption = 'newest';
@@ -58,15 +59,29 @@ export class App {
       description: this.description,
       department: this.department,
       status: 'OPEN',
-      category: this.category,
-      priority: this.priority,
-      summary: this.summary,
-      suggestedSteps: this.suggestedSteps,
     };
 
-    this.http.post<any>(this.ticketApiUrl, ticket).subscribe((response) => {
-      this.message = `Ticket saved with ID: ${response.id}`;
-      this.loadTickets();
+    this.isSaving = true;
+    this.message = 'Analyzing ticket...';
+
+    this.http.post<any>(this.ticketApiUrl, ticket).subscribe({
+      next: (response) => {
+        this.message = `Ticket saved with ID: ${response.id}`;
+        this.loadTickets();
+
+        // Reset the form so the next ticket starts from a clean state.
+        this.title = '';
+        this.description = '';
+        this.department = '';
+      },
+      error: () => {
+        this.message = 'Unable to save ticket. Please try again.';
+      },
+      
+      // Restore the button state regardless of the request outcome.
+      complete: () => {
+        this.isSaving = false;
+      },
     });
   }
 

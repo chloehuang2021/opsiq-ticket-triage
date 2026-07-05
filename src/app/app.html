@@ -17,18 +17,23 @@
 </div>
 
 <div class="button-row">
-  <button (click)="analyzeTicket()">Analyze with AI</button>
-  <button (click)="saveTicket()">Save Ticket</button>
+  <button
+    (click)="saveTicket()"
+    [disabled]="isSaving">
+    {{ isSaving ? 'Analyzing...' : 'Save Ticket' }}
+  </button>
 </div>
+
 
 <p class="message">{{ message }}</p>
 
+<!--
 <h2>AI Result</h2>
-
 <p><strong>Category:</strong> {{ category }}</p>
 <p><strong>Priority:</strong> {{ priority }}</p>
 <p><strong>Summary:</strong> {{ summary }}</p>
 <p><strong>Suggested Steps:</strong> {{ suggestedSteps }}</p>
+-->
 
 <h2>Preview</h2>
 
@@ -96,8 +101,8 @@
 </div>
 
 
-<p class="message">{{ message }}</p>
 
+<!--Ticket Card -->
 <div *ngFor="let ticket of sortedTickets" class="ticket-card">
   <h3>{{ ticket.title }}</h3>
 
@@ -105,7 +110,7 @@
   <p><strong>Category:</strong> {{ ticket.category }}</p>
 
   <p><strong>Summary:</strong> {{ ticket.summary }}</p>
-  <p>{{ ticket.summary }}</p>
+
 
   <p><strong>Status:</strong> {{ ticket.status }}</p>
 
@@ -114,7 +119,7 @@
     {{ ticket.suggestedSteps }}
   </div>
 
-  
+
   <!--Display ticket timestamps -->
   <p>
     <strong>Created:</strong>
