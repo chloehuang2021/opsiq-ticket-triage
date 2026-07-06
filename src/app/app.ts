@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+//import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { finalize, timeout } from 'rxjs';
+import { Component, ChangeDetectorRef } from '@angular/core';
 
 
 @Component({
@@ -15,7 +17,10 @@ export class App {
   private readonly ticketApiUrl = 'http://localhost:8081/api/tickets';
   private readonly aiApiUrl = 'http://localhost:8081/api/ai/analyze';
 
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    private cdr: ChangeDetectorRef,
+  ) {}
 
   ngOnInit() {
     this.loadTickets();
@@ -43,14 +48,13 @@ export class App {
       status: 'OPEN',
     };
 
-    this.http
-      .post<any>(this.aiApiUrl, ticket)
-      .subscribe((response) => {
-        this.category = response.category;
-        this.priority = response.priority;
-        this.summary = response.summary;
-        this.suggestedSteps = response.suggestedSteps;
-      });
+
+    this.http.post<any>(this.aiApiUrl, ticket).subscribe((response) => {
+      this.category = response.category;
+      this.priority = response.priority;
+      this.summary = response.summary;
+      this.suggestedSteps = response.suggestedSteps;
+    });
   }
 
   saveTicket() {
@@ -64,25 +68,32 @@ export class App {
     this.isSaving = true;
     this.message = 'Analyzing ticket...';
 
+    //Persist the ticket and synchronize the UI after the asynchronous save completes.
     this.http.post<any>(this.ticketApiUrl, ticket).subscribe({
       next: (response) => {
+        this.isSaving = false;
+
         this.message = `Ticket saved with ID: ${response.id}`;
+
         this.loadTickets();
 
-        // Reset the form so the next ticket starts from a clean state.
         this.title = '';
         this.description = '';
         this.department = '';
+
+        // Ensure the loading state is reflected immediately after the async callback.
+        this.cdr.detectChanges();
       },
-      error: () => {
-        this.message = 'Unable to save ticket. Please try again.';
-      },
-      
-      // Restore the button state regardless of the request outcome.
-      complete: () => {
+      error: (error) => {
+        console.error(error);
+
         this.isSaving = false;
+        this.message = 'Unable to save ticket. Please try again.';
+
+        this.cdr.detectChanges();
       },
     });
+    //---The end
   }
 
   loadTickets() {
@@ -91,7 +102,6 @@ export class App {
       this.tickets = response;
     });
   }
-
 
   deleteTicket(id: number) {
     this.http.delete(`${this.ticketApiUrl}/${id}`).subscribe(() => {
