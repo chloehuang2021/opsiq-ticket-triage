@@ -1,10 +1,10 @@
-//import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { finalize, timeout } from 'rxjs';
-import { Component, ChangeDetectorRef } from '@angular/core';
 
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -12,19 +12,9 @@ import { Component, ChangeDetectorRef } from '@angular/core';
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
-export class App {
-  // Centralize API endpoints to avoid scattered environment-specific changes.
-  private readonly ticketApiUrl = 'http://localhost:8081/api/tickets';
-  private readonly aiApiUrl = 'http://localhost:8081/api/ai/analyze';
-
-  constructor(
-    private http: HttpClient,
-    private cdr: ChangeDetectorRef,
-  ) {}
-
-  ngOnInit() {
-    this.loadTickets();
-  }
+export class App implements OnInit {
+  private readonly ticketApiUrl = `${environment.apiBaseUrl}/tickets`;
+  private readonly aiApiUrl = `${environment.apiBaseUrl}/ai/analyze`;
 
   title = '';
   description = '';
@@ -40,14 +30,22 @@ export class App {
   searchText = '';
   sortOption = 'newest';
 
-  analyzeTicket() {
+  constructor(
+    private readonly http: HttpClient,
+    private readonly cdr: ChangeDetectorRef,
+  ) {}
+
+  ngOnInit(): void {
+    this.loadTickets();
+  }
+
+  analyzeTicket(): void {
     const ticket = {
       title: this.title,
       description: this.description,
       department: this.department,
       status: 'OPEN',
     };
-
 
     this.http.post<any>(this.aiApiUrl, ticket).subscribe((response) => {
       this.category = response.category;
