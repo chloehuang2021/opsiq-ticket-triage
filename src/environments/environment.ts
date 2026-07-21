@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiBaseUrl: 'https://YOUR-BACKEND.onrender.com/api',
+  apiBaseUrl: 'https://opsiq-ticket-triage-backend.onrender.com/api',
 };
