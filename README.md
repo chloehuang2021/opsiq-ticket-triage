@@ -3,6 +3,7 @@
 A full-stack ticket management application with AI-powered functions that automatically categorize support requests, assign priorities, generate concise summaries, and recommend troubleshooting steps.
 
 Built with Angular, Spring Boot, PostgreSQL, Docker, and OpenRouter.
+
 ![Angular](https://img.shields.io/badge/Angular-v21-DD0031?logo=angular&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5-6DB33F?logo=springboot&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-17-007396?logo=openjdk&logoColor=white)
