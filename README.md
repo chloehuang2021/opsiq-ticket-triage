@@ -3,12 +3,13 @@
 A full-stack ticket management application with AI-powered functions that automatically categorize support requests, assign priorities, generate concise summaries, and recommend troubleshooting steps.
 
 Built with Angular, Spring Boot, PostgreSQL, Docker, and OpenRouter.
-![Angular](...)
-![Spring Boot](...)
-![Java 17](...)
-![PostgreSQL](...)
-![Docker](...)
-![Render](...)
+![Angular](https://img.shields.io/badge/Angular-v21-DD0031?logo=angular&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5-6DB33F?logo=springboot&logoColor=white)
+![Java](https://img.shields.io/badge/Java-17-007396?logo=openjdk&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker&logoColor=white)
+![Render](https://img.shields.io/badge/Render-Deployed-46E3B7?logo=render&logoColor=black)
+![OpenRouter](https://img.shields.io/badge/OpenRouter-AI-7C3AED)
 
 🚀 **Live Demo:** https://opsiq-ticket-triage.onrender.com
 
