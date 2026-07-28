@@ -1,4 +1,4 @@
-<img width="1774" height="887" alt="Architecture" src="https://github.com/user-attachments/assets/8a87fa23-438f-400e-870b-15709d114d3e" /># OpsIQ Ticket Triage
+# OpsIQ Ticket Triage
 
 A full-stack ticket management application with AI-powered functions that automatically categorize support requests, assign priorities, generate concise summaries, and recommend troubleshooting steps.
 
