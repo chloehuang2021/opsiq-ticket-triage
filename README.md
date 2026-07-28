@@ -105,30 +105,53 @@ https://github.com/chloehuang2021/opsiq-ticket-triage-backend
 - Updated timestamp
 
 
+
+
 ## Architecture
 
-```
+```mermaid
+flowchart LR
+    User[User]
 
-            HTTP
-┌────────────────────────┐
-│    Angular Frontend    │
-└────────────┬───────────┘
-             │
-             ▼
-┌────────────────────────┐
-│ Spring Boot Backend    │
-│ (Docker Container)     │
-└────────────┬───────────┘
-             │
-       Spring Data JPA
-             │
-             ▼
-┌────────────────────────┐
-│ PostgreSQL             │
-│ (Docker Container)     │
-└────────────────────────┘
-```
+    subgraph Frontend["Frontend — Angular"]
+        UI[Ticket Management UI]
+        Dashboard[Dashboard]
+        Search[Search / Filter / Sort]
+    end
 
+    subgraph Backend["Backend — Spring Boot"]
+        API[REST API]
+        TicketService[Ticket Service]
+        AIService[AI Analysis Service]
+        ErrorHandling[Fallback & Error Handling]
+    end
+
+    subgraph Data["Data Layer"]
+        DB[(PostgreSQL)]
+    end
+
+    subgraph External["External Services"]
+        OpenRouter[OpenRouter API]
+        AIModel[DeepSeek Chat Model]
+    end
+
+    User --> UI
+    UI --> Dashboard
+    UI --> Search
+    UI -->|HTTP / JSON| API
+
+    API --> TicketService
+    API --> AIService
+    TicketService -->|CRUD operations| DB
+
+    AIService -->|Ticket data| OpenRouter
+    OpenRouter --> AIModel
+    AIModel -->|AI analysis| AIService
+
+    AIService --> ErrorHandling
+    AIService --> TicketService
+
+    API -->|JSON response| UI
 ## Docker Support
 
 The backend application is fully containerized using Docker and Docker Compose for simplified local development and deployment.
