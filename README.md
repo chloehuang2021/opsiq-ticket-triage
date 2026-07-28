@@ -48,6 +48,7 @@ The application demonstrates full-stack development, REST API design, AI integra
 <img width="2880" height="1864" alt="ticket preview 3 After evening" src="https://github.com/user-attachments/assets/b0babd44-de69-46a6-9e9d-e42d085b26a7" />
 
 #### Ticket Management with Keyword Searching & Oldest First Sorting Screenshot
+<img width="2880" height="1804" alt="ticket preview 4 After evening" src="https://github.com/user-attachments/assets/0e51aa73-6504-4d14-aafd-47e495c1dc0b" />
 
 
 
