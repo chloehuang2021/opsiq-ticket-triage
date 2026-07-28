@@ -39,13 +39,18 @@ The application demonstrates full-stack development, REST API design, AI integra
 #### AI Analysis Screenshot
 <img width="2876" height="1806" alt="ticket preview 2 After evening" src="https://github.com/user-attachments/assets/73610e0f-4970-431d-af02-710a38953863" />
 
-#### Dashboard Screenshot
-  
+#### Dashboard Screenshot<img width="2880" height="1804" alt="ticket preview 4 After evening" src="https://github.com/user-attachments/assets/02bef049-476a-43a0-9367-2cb4e7ce60f7" />
+<img width="2880" height="1804" alt="ticket preview 4 After evening" src="https://github.com/user-attachments/assets/ed2b6c0a-ea0d-47cf-91f1-f571877c7c18" />
+
 <img width="1252" height="268" alt="image" src="https://github.com/user-attachments/assets/2a1351e0-cd8d-403f-a498-5173ff118359" />
 
-#### Ticket Management Screenshot
+#### Ticket Management with Newest First Sorting Screenshot
+<img width="2880" height="1864" alt="ticket preview 3 After evening" src="https://github.com/user-attachments/assets/b0babd44-de69-46a6-9e9d-e42d085b26a7" />
 
-<img width="1830" height="1356" alt="image" src="https://github.com/user-attachments/assets/63cd2dfa-2428-4e62-bc37-a8e0f7996597" />
+#### Ticket Management with Keyword Searching & Oldest First Sorting Screenshot
+
+
+
 
 
 ## Related Repositories
