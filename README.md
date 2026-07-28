@@ -1,4 +1,4 @@
-# OpsIQ Ticket Triage
+<img width="1774" height="887" alt="Architecture" src="https://github.com/user-attachments/assets/8a87fa23-438f-400e-870b-15709d114d3e" /># OpsIQ Ticket Triage
 
 A full-stack ticket management application with AI-powered functions that automatically categorize support requests, assign priorities, generate concise summaries, and recommend troubleshooting steps.
 
@@ -109,26 +109,9 @@ https://github.com/chloehuang2021/opsiq-ticket-triage-backend
 
 ## Architecture
 
-''''mermaid
-flowchart LR
 
-    User[User]
+<img width="1774" height="887" alt="Architecture" src="https://github.com/user-attachments/assets/5525a53c-d9b7-406e-bdad-609d64e8f669" />
 
-    Frontend[Angular Frontend]
-    Backend[Spring Boot Backend]
-    Database[(PostgreSQL Database)]
-    OpenRouter[OpenRouter API]
-    AIModel[DeepSeek AI Model]
-
-    User --> Frontend
-    Frontend -->|HTTP requests| Backend
-    Backend -->|CRUD operations| Database
-    Backend -->|Ticket information| OpenRouter
-    OpenRouter --> AIModel
-    AIModel -->|AI analysis| OpenRouter
-    OpenRouter -->|Category priority summary steps| Backend
-    Backend -->|JSON response| Frontend
-```
 
 
 
