@@ -31,10 +31,13 @@ The application demonstrates full-stack development, REST API design, AI integra
 
 --
 ## Screenshots
+#### How to Create a New Ticket Screenshot
+<img width="2876" height="1802" alt="ticket preview 1 After evening" src="https://github.com/user-attachments/assets/3d9949d8-5f77-4569-97e7-9e31e7d36f18" />
+
+
 
 #### AI Analysis Screenshot
-  
-<img width="1988" height="1186" alt="image" src="https://github.com/user-attachments/assets/19882878-fe8c-4ad4-ae9a-1b6da727119e" />
+<img width="2876" height="1806" alt="ticket preview 2 After evening" src="https://github.com/user-attachments/assets/73610e0f-4970-431d-af02-710a38953863" />
 
 #### Dashboard Screenshot
   
