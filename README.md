@@ -30,37 +30,6 @@ Incoming support requests are automatically analyzed using an LLM, categorized, 
 The application demonstrates full-stack development, REST API design, AI integration, containerization, and cloud deployment.
 
 
-## Screenshots
-#### How to Create a New Ticket Screenshot
-
-<img width="2876" height="1802" alt="ticket preview 1 After evening" src="https://github.com/user-attachments/assets/3d9949d8-5f77-4569-97e7-9e31e7d36f18" />
-
-
-
-#### AI Analysis Screenshot
-
-<img width="2876" height="1806" alt="ticket preview 2 After evening" src="https://github.com/user-attachments/assets/73610e0f-4970-431d-af02-710a38953863" />
-
-#### Dashboard Screenshot
-
-
-<img width="936" height="198" alt="Dashboard" src="https://github.com/user-attachments/assets/85b705b5-0ead-4e81-ba72-614dad96ca07" />
-
-
-
-
-#### Ticket Management with Newest First Sorting Screenshot
-
-<img width="2880" height="1864" alt="ticket preview 3 After evening" src="https://github.com/user-attachments/assets/b0babd44-de69-46a6-9e9d-e42d085b26a7" />
-
-#### Ticket Management with Keyword Searching & Oldest First Sorting Screenshot
-
-<img width="2880" height="1804" alt="ticket preview 4 After evening" src="https://github.com/user-attachments/assets/0e51aa73-6504-4d14-aafd-47e495c1dc0b" />
-
-
-
-
-
 ## Related Repositories
 
 * Frontend:
@@ -117,6 +86,33 @@ https://github.com/chloehuang2021/opsiq-ticket-triage-backend
 
 
 
+
+## Screenshots
+#### How to Create a New Ticket Screenshot
+
+<img width="2876" height="1802" alt="ticket preview 1 After evening" src="https://github.com/user-attachments/assets/3d9949d8-5f77-4569-97e7-9e31e7d36f18" />
+
+
+
+#### AI Analysis Screenshot
+
+<img width="2876" height="1806" alt="ticket preview 2 After evening" src="https://github.com/user-attachments/assets/73610e0f-4970-431d-af02-710a38953863" />
+
+#### Dashboard Screenshot
+
+
+<img width="936" height="198" alt="Dashboard" src="https://github.com/user-attachments/assets/85b705b5-0ead-4e81-ba72-614dad96ca07" />
+
+
+
+
+#### Ticket Management with Newest First Sorting Screenshot
+
+<img width="2880" height="1864" alt="ticket preview 3 After evening" src="https://github.com/user-attachments/assets/b0babd44-de69-46a6-9e9d-e42d085b26a7" />
+
+#### Ticket Management with Keyword Searching & Oldest First Sorting Screenshot
+
+<img width="2880" height="1804" alt="ticket preview 4 After evening" src="https://github.com/user-attachments/assets/0e51aa73-6504-4d14-aafd-47e495c1dc0b" />
 
 
 
