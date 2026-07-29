@@ -175,48 +175,25 @@ docker compose down
 
 ## Tech Stack
 
-| Layer | Technology |
-|--------|------------|
-| Frontend | Angular |
-| Backend | Spring Boot |
-| Language | Java |
-| Database | PostgreSQL |
-| ORM | Spring Data JPA / Hibernate |
-| AI Integration | OpenRouter API |
-| AI Model | DeepSeek Chat V3 |
-| Build Tool | Maven |
-| Containerization | Docker |
+
+| Category | Technology |
+|----------|------------|
+| Frontend | Angular, TypeScript, HTML, CSS |
+| Backend | Spring Boot, Java, RESTful API |
+| Database | PostgreSQL, Spring Data JPA |
+| Containerization | Docker, Docker Compose |
+| AI Integration | OpenRouter API, DeepSeek Chat V3 |
 | Deployment | Render |
+| Version Control | Git, GitHub |
 
-### Frontend
 
-* Angular
-* TypeScript
-* HTML/CSS
-
-### Backend
-
-* Spring Boot
-* Java
-* REST API
-
-### Database
-
-* PostgreSQL
-* Spring Data JPA
-
-### DevOps
-
-* Docker
-* Docker Compose
 
 ### Deployment
 
-* Dockerized the Spring Boot backend using Docker
-* Orchestrated the backend and PostgreSQL services with Docker Compose
-* Configured environment-based database connection using Docker environment variables
-* Enabled one-command local deployment with `docker compose up -d --build`
-
+- Containerized the Spring Boot backend using Docker
+- Orchestrated the backend and PostgreSQL services with Docker Compose
+- Configured environment-based database connections using environment variables
+- Enabled one-command local deployment with `docker compose up -d --build`
 
 
 ## Current Functionality
