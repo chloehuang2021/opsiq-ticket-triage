@@ -14,13 +14,13 @@ Built with Angular, Spring Boot, PostgreSQL, Docker, and OpenRouter.
 
 ## Live Demo
 
-Frontend
+Frontend:
 https://opsiq-ticket-triage.onrender.com
 
-Backend API
+Backend API:
 https://opsiq-ticket-triage-backend.onrender.com
 
-🚀🎥 Demo Video:
+Demo Video:
 https://youtu.be/LJh7dDF6jPY
 
 ## Overview
