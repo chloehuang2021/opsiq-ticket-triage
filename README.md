@@ -29,7 +29,7 @@ OpsIQ simulates a modern enterprise IT ticketing system.
 Incoming support requests are automatically analyzed using an LLM, categorized, prioritized, summarized, and enriched with suggested troubleshooting steps before being stored in PostgreSQL.
 The application demonstrates full-stack development, REST API design, AI integration, containerization, and cloud deployment.
 
---
+
 ## Screenshots
 #### How to Create a New Ticket Screenshot
 
