@@ -42,36 +42,32 @@ https://github.com/chloehuang2021/opsiq-ticket-triage-backend
 
 ### AI-Powered Ticket Analysis
 
-- Automatic ticket categorization
-- Priority assignment (High, Medium, Low)
-- Ticket summary generation
-- Suggested resolution steps
+- Automatically categorize IT support tickets
+- Assign priority levels (High, Medium, Low)
+- Generate concise ticket summaries
+- Recommend troubleshooting and resolution steps
+- Handle AI service failures with automatic fallback values
 
 ### Ticket Management
 
-- Create support tickets
-- View all tickets
-- Update ticket status
-- Delete tickets
+- Create, view, update, and delete support tickets
+- Track ticket status throughout its lifecycle
 
-### Search, Filter, and Sort
+### Search and Organization
 
 - Search tickets by title
-- Filter by status
-- Sort by date
-- Sort by priority
+- Filter tickets by status
+- Sort tickets by priority or creation date
 
-### Dashboard Metrics
+### Dashboard
 
-- Total tickets
-- Open tickets
-- In Progress tickets
-- Resolved tickets
+- View ticket status metrics at a glance
+- Monitor total, Open, In Progress, and Resolved ticket counts
 
-### Audit Information
+### Audit Tracking
 
-- Created timestamp
-- Updated timestamp
+- Automatically record creation and last updated timestamps
+
 
 
 
