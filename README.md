@@ -175,6 +175,19 @@ docker compose down
 
 ## Tech Stack
 
+| Layer | Technology |
+|--------|------------|
+| Frontend | Angular |
+| Backend | Spring Boot |
+| Language | Java |
+| Database | PostgreSQL |
+| ORM | Spring Data JPA / Hibernate |
+| AI Integration | OpenRouter API |
+| AI Model | DeepSeek Chat V3 |
+| Build Tool | Maven |
+| Containerization | Docker |
+| Deployment | Render |
+
 ### Frontend
 
 * Angular
