@@ -130,6 +130,12 @@ The backend application is fully containerized using Docker and Docker Compose f
 docker compose up -d --build
 ```
 
+After the containers have started, the backend API will be available at:
+
+```text
+http://localhost:8081
+```
+
 This command will:
 
 * Build the Spring Boot backend image
@@ -137,10 +143,18 @@ This command will:
 * Start the backend container
 * Automatically connect the backend to the PostgreSQL database
 
+  
+### Services
+
+| Service | Host Port | Container Port |
+|----------|----------:|---------------:|
+| Spring Boot Backend | 8081 | 8080 |
+| PostgreSQL | 5432 | 5432 |
+
 ### Verify the API
 
 ```bash
-curl http://localhost:8080/api/tickets
+curl http://localhost:8081/api/tickets
 ```
 
 Expected response:
@@ -149,7 +163,7 @@ Expected response:
 []
 ```
 
-### Stop the Application
+### Stop the Services
 
 ```bash
 docker compose down
@@ -170,7 +184,12 @@ docker compose down
 └───────────────────────┘
 ```
 
-
+### Highlights
+- Containerized Spring Boot backend
+- PostgreSQL database container
+- Docker Compose orchestration
+- Environment-based configuration
+- One-command local deployment
 
 
 ## Tech Stack
