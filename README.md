@@ -12,16 +12,21 @@ Built with Angular, Spring Boot, PostgreSQL, Docker, and OpenRouter.
 ![Render](https://img.shields.io/badge/Render-Deployed-46E3B7?logo=render&logoColor=black)
 ![OpenRouter](https://img.shields.io/badge/OpenRouter-AI-7C3AED)
 
+
 ## Live Demo
 
-Frontend:
-https://opsiq-ticket-triage.onrender.com
+- **Frontend:** https://your-frontend-url.onrender.com
+- **Backend API:** https://your-backend-url.onrender.com
+- Demo Video: https://youtu.be/LJh7dDF6jPY
 
-Backend API:
-https://opsiq-ticket-triage-backend.onrender.com
+## Source Code
 
-Demo Video:
-https://youtu.be/LJh7dDF6jPY
+| Component | Repository |
+|----------|------------|
+| Frontend (Angular) | https://github.com/yourusername/opsiq-ticket-triage-frontend |
+| Backend (Spring Boot) | https://github.com/yourusername/opsiq-ticket-triage-backend |
+
+
 
 ## Overview
 
