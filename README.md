@@ -240,13 +240,15 @@ docker compose down
 
 
 ## Future Enhancements
-* Integrate a production LLM API for AI-powered ticket analysis
-* Containerize the Angular frontend
-* AWS deployment
-* Advanced AI integration
-* Implement user authentication and authorization
-* Add ticket assignment and workflow management
-* Support file attachments and comments
+
+- Integrate a production-grade LLM for enhanced ticket analysis
+- Containerize the Angular frontend
+- Deploy the application to AWS
+- Implement a CI/CD pipeline
+- Add user authentication and role-based authorization
+- Support ticket assignment and workflow management
+- Add file attachments and comments
+- Enable email notifications for ticket updates
 
 
 ## Author
