@@ -51,30 +51,56 @@
 <p><strong>Description:</strong> {{ description }}</p>
 <p><strong>Department:</strong> {{ department }}</p>
 
+
 <!-- Dashboard -->
-<h2>Dashboard</h2>
+<section class="dashboard-section">
+  <div class="dashboard-header">
+    <div class="dashboard-title-group">
+      <h2>Dashboard</h2>
 
-<div class="dashboard">
-  <div class="dashboard-card total-card">
-    <h3>Total</h3>
-    <p>{{ totalCount }}</p>
+        </div>
   </div>
 
-  <div class="dashboard-card open-card">
-    <h3>Open</h3>
-    <p>{{ openCount }}</p>
+  <div class="dashboard">
+    <div class="dashboard-card total-card">
+      <div class="dashboard-card-header">
+        <h3>Total</h3>
+        <span class="metric-icon">◩</span>
+      </div>
+
+      <p>{{ totalCount }}</p>
+    </div>
+
+    <div class="dashboard-card open-card">
+      <div class="dashboard-card-header">
+        <h3>Open</h3>
+        <span class="metric-icon">!</span>
+      </div>
+
+      <p>{{ openCount }}</p>
+    </div>
+
+    <div class="dashboard-card progress-card">
+      <div class="dashboard-card-header">
+        <h3>In Progress</h3>
+        <span class="metric-icon">◷</span>
+      </div>
+
+      <p>{{ inProgressCount }}</p>
+    </div>
+
+    <div class="dashboard-card resolved-card">
+      <div class="dashboard-card-header">
+        <h3>Resolved</h3>
+        <span class="metric-icon">✓</span>
+      </div>
+
+      <p>{{ resolvedCount }}</p>
+    </div>
   </div>
 
-  <div class="dashboard-card progress-card">
-    <h3>In Progress</h3>
-    <p>{{ inProgressCount }}</p>
-  </div>
-
-  <div class="dashboard-card resolved-card">
-    <h3>Resolved</h3>
-    <p>{{ resolvedCount }}</p>
-  </div>
-</div>
+</section>
+<!-- ------- -->
 
 <h2>Saved Tickets</h2>
 
