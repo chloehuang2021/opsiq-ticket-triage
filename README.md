@@ -89,17 +89,22 @@ https://github.com/chloehuang2021/opsiq-ticket-triage-backend
 
 
 ## Screenshots
-#### How to Create a New Ticket Screenshot
+#### Before Creating a Ticket
+<img width="2880" height="1806" alt="New UI Overview" src="https://github.com/user-attachments/assets/aecbe6f1-aabd-411a-a17e-2a3f49c3422e" />
+
+
+
+#### How to Create a New Ticket 
 
 <img width="2876" height="1802" alt="ticket preview 1 After evening" src="https://github.com/user-attachments/assets/3d9949d8-5f77-4569-97e7-9e31e7d36f18" />
 
 
 
-#### AI Analysis Screenshot
+#### AI Analysis 
 
 <img width="2876" height="1806" alt="ticket preview 2 After evening" src="https://github.com/user-attachments/assets/73610e0f-4970-431d-af02-710a38953863" />
 
-#### Dashboard Screenshot
+#### Dashboard 
 
 
 <img width="936" height="198" alt="Dashboard" src="https://github.com/user-attachments/assets/85b705b5-0ead-4e81-ba72-614dad96ca07" />
@@ -107,11 +112,11 @@ https://github.com/chloehuang2021/opsiq-ticket-triage-backend
 
 
 
-#### Ticket Management with Newest First Sorting Screenshot
+#### Ticket Management with Newest First Sorting 
 
 <img width="2880" height="1864" alt="ticket preview 3 After evening" src="https://github.com/user-attachments/assets/b0babd44-de69-46a6-9e9d-e42d085b26a7" />
 
-#### Ticket Management with Keyword Searching & Oldest First Sorting Screenshot
+#### Ticket Management with Keyword Searching & Oldest First Sorting 
 
 <img width="2880" height="1804" alt="ticket preview 4 After evening" src="https://github.com/user-attachments/assets/0e51aa73-6504-4d14-aafd-47e495c1dc0b" />
 
