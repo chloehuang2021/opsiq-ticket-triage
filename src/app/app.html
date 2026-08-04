@@ -1,19 +1,30 @@
 
 <h1>OpsIQ Ticket Triage</h1>
 
-<div>
-  <label>Title:</label>
-  <input type="text" [(ngModel)]="title" />
+<div class="form-group">
+  <label>Title: </label>
+  <input
+    type="text"
+    [(ngModel)]="title"
+    placeholder="Enter a short ticket title"
+  />
 </div>
 
-<div>
-  <label>Description:</label>
-  <textarea [(ngModel)]="description"></textarea>
+<div class="form-group">
+  <label>Description: </label>
+  <textarea
+    [(ngModel)]="description"
+    placeholder="Describe the issue, symptoms, and relevant details"
+  ></textarea>
 </div>
 
-<div>
-  <label>Department:</label>
-  <input type="text" [(ngModel)]="department" />
+<div class="form-group">
+  <label>Department: </label>
+  <input
+    type="text"
+    [(ngModel)]="department"
+    placeholder="Example: Human Resources"
+  />
 </div>
 
 <div class="button-row">
@@ -23,7 +34,6 @@
     {{ isSaving ? 'Analyzing...' : 'Save Ticket' }}
   </button>
 </div>
-
 
 <p class="message">{{ message }}</p>
 
@@ -41,8 +51,9 @@
 <p><strong>Description:</strong> {{ description }}</p>
 <p><strong>Department:</strong> {{ department }}</p>
 
-<!--Dashboard-->
+<!-- Dashboard -->
 <h2>Dashboard</h2>
+
 <div class="dashboard">
   <div class="dashboard-card total-card">
     <h3>Total</h3>
@@ -65,13 +76,12 @@
   </div>
 </div>
 
-
 <h2>Saved Tickets</h2>
 
-
-<!--Ticket Status Filter Function：Allow users to filter tickets by status -->
+<!-- Ticket Status Filter Function: Allow users to filter tickets by status -->
 <div class="control-section">
   <label>Filter:</label>
+
   <select [(ngModel)]="selectedStatus">
     <option value="ALL">All</option>
     <option value="OPEN">Open</option>
@@ -80,18 +90,21 @@
   </select>
 </div>
 
-<!--Ticket Search Function：Allow users to search by ticket title-->
+<!-- Ticket Search Function: Allow users to search by ticket title -->
 <div class="control-section">
   <label>Search:</label>
+
   <input
     type="text"
     [(ngModel)]="searchText"
     placeholder="Search ticket title..."
   />
 </div>
-<!-- Ticket Sort Function: Allow users to filter tickets by status -->
+
+<!-- Ticket Sort Function -->
 <div class="control-section">
   <label>Sort:</label>
+
   <select [(ngModel)]="sortOption">
     <option value="newest">Newest First</option>
     <option value="oldest">Oldest First</option>
@@ -100,27 +113,42 @@
   </select>
 </div>
 
+<!-- Ticket Card -->
+<div
+  *ngFor="let ticket of sortedTickets"
+  class="ticket-card">
 
-
-<!--Ticket Card -->
-<div *ngFor="let ticket of sortedTickets" class="ticket-card">
   <h3>{{ ticket.title }}</h3>
 
-  <p><strong>Priority:</strong> {{ ticket.priority }}</p>
-  <p><strong>Category:</strong> {{ ticket.category }}</p>
+  <p>
+    <strong>Priority:</strong>
+    {{ ticket.priority }}
+  </p>
 
-  <p><strong>Summary:</strong> {{ ticket.summary }}</p>
+  <p>
+    <strong>Category:</strong>
+    {{ ticket.category }}
+  </p>
 
+  <p>
+    <strong>Summary:</strong>
+    {{ ticket.summary }}
+  </p>
 
-  <p><strong>Status:</strong> {{ ticket.status }}</p>
+  <p>
+    <strong>Status:</strong>
+    {{ ticket.status }}
+  </p>
 
-  <p><strong>Suggested Steps:</strong></p>
+  <p>
+    <strong>Suggested Steps:</strong>
+  </p>
+
   <div class="suggested-steps">
     {{ ticket.suggestedSteps }}
   </div>
 
-
-  <!--Display ticket timestamps -->
+  <!-- Display ticket timestamps -->
   <p>
     <strong>Created:</strong>
     {{ ticket.createdAt | date:'medium' }}
@@ -130,7 +158,6 @@
     <strong>Updated:</strong>
     {{ ticket.updatedAt | date:'medium' }}
   </p>
-
 
   <button
     class="delete-btn"
@@ -149,5 +176,6 @@
     (click)="updateStatus(ticket.id, 'RESOLVED')">
     Mark Resolved
   </button>
-
 </div>
+
+
