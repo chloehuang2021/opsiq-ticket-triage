@@ -258,8 +258,6 @@ button:disabled {
 }
 
 
-
-
 /* Ticket cards */
 
 .ticket-card {
@@ -274,6 +272,23 @@ button:disabled {
     transform 0.15s ease,
     box-shadow 0.15s ease;
 }
+
+.ticket-status {
+  font-weight: 700;
+}
+
+.status-open {
+  color: #dc2626;
+}
+
+.status-in-progress {
+  color: #f97316;
+}
+
+.status-resolved {
+  color: #15803d;
+}
+
 
 .ticket-card:hover {
   transform: translateY(-1px);

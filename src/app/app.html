@@ -1,5 +1,5 @@
 
-<h1>OpsIQ Ticket Triage</h1>
+<h1>OpsIQ - AI Ticket Triage</h1>
 
 <div class="form-group">
   <label>Title: </label>
@@ -170,10 +170,21 @@
     {{ ticket.summary }}
   </p>
 
+
   <p>
     <strong>Status:</strong>
+
+    <span
+      class="ticket-status"
+      [class.status-open]="ticket.status === 'OPEN'"
+      [class.status-in-progress]="ticket.status === 'IN_PROGRESS'"
+      [class.status-resolved]="ticket.status === 'RESOLVED'"
+    >
     {{ ticket.status }}
+  </span>
   </p>
+
+
 
   <p>
     <strong>Suggested Steps:</strong>
