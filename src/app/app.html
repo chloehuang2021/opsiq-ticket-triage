@@ -104,40 +104,49 @@
 
 <h2>Saved Tickets</h2>
 
-<!-- Ticket Status Filter Function: Allow users to filter tickets by status -->
-<div class="control-section">
-  <label>Filter:</label>
+<div class="ticket-controls">
 
-  <select [(ngModel)]="selectedStatus">
-    <option value="ALL">All</option>
-    <option value="OPEN">Open</option>
-    <option value="IN_PROGRESS">In Progress</option>
-    <option value="RESOLVED">Resolved</option>
-  </select>
+  <!-- Ticket Status Filter -->
+  <div class="control-section">
+    <label>Filter:</label>
+
+    <select [(ngModel)]="selectedStatus">
+      <option value="ALL">All</option>
+      <option value="OPEN">Open</option>
+      <option value="IN_PROGRESS">In Progress</option>
+      <option value="RESOLVED">Resolved</option>
+    </select>
+  </div>
+
+  <!-- Ticket Search -->
+  <div class="control-section">
+    <label>Search:</label>
+
+    <input
+      type="text"
+      [(ngModel)]="searchText"
+      placeholder="Search ticket title..."
+    />
+  </div>
+
+  <!-- Ticket Sort -->
+  <div class="control-section">
+    <label>Sort:</label>
+
+    <select [(ngModel)]="sortOption">
+      <option value="newest">Newest First</option>
+      <option value="oldest">Oldest First</option>
+      <option value="priorityHigh">Priority: High to Low</option>
+      <option value="priorityLow">Priority: Low to High</option>
+    </select>
+  </div>
+
 </div>
 
-<!-- Ticket Search Function: Allow users to search by ticket title -->
-<div class="control-section">
-  <label>Search:</label>
 
-  <input
-    type="text"
-    [(ngModel)]="searchText"
-    placeholder="Search ticket title..."
-  />
-</div>
 
-<!-- Ticket Sort Function -->
-<div class="control-section">
-  <label>Sort:</label>
 
-  <select [(ngModel)]="sortOption">
-    <option value="newest">Newest First</option>
-    <option value="oldest">Oldest First</option>
-    <option value="priorityHigh">Priority: High to Low</option>
-    <option value="priorityLow">Priority: Low to High</option>
-  </select>
-</div>
+
 
 <!-- Ticket Card -->
 <div
