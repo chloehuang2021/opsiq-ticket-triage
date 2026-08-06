@@ -89,23 +89,21 @@ https://github.com/chloehuang2021/opsiq-ticket-triage-backend
 
 
 ## Screenshots
-#### Before Creating a Ticket
+#### Default View
 <img width="2880" height="1806" alt="New UI Overview" src="https://github.com/user-attachments/assets/aecbe6f1-aabd-411a-a17e-2a3f49c3422e" />
 
 
 
-#### How to Create a New Ticket 
-
+#### Create Ticket
 <img width="2876" height="1802" alt="ticket preview 1 After evening" src="https://github.com/user-attachments/assets/3d9949d8-5f77-4569-97e7-9e31e7d36f18" />
-
 
 
 #### AI Analysis 
 
 <img width="2876" height="1806" alt="ticket preview 2 After evening" src="https://github.com/user-attachments/assets/73610e0f-4970-431d-af02-710a38953863" />
 
-#### Dashboard 
 
+#### Dashboard 
 
 <img width="936" height="198" alt="Dashboard" src="https://github.com/user-attachments/assets/85b705b5-0ead-4e81-ba72-614dad96ca07" />
 
@@ -122,7 +120,7 @@ https://github.com/chloehuang2021/opsiq-ticket-triage-backend
 
 
 
-
+#### Status Updates
 
 
 
