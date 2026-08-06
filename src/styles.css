@@ -343,6 +343,14 @@ button:disabled {
   }
 }
 
+.suggested-steps {
+  white-space: pre-line;
+  margin-bottom: 20px;
+}
+
+.updated-time {
+  margin-bottom: 24px !important;
+}
 
 
 
