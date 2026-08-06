@@ -1,4 +1,4 @@
-# OpsIQ Ticket Triage
+# OpsIQ AI Ticket Triage
 
 A full-stack ticket management application with AI-powered functions that automatically categorize support requests, assign priorities, generate concise summaries, and recommend troubleshooting steps.
 
