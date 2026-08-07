@@ -106,7 +106,8 @@ https://github.com/chloehuang2021/opsiq-ticket-triage-backend
 
 #### AI Analysis 
 
-<img width="2876" height="1806" alt="ticket preview 2 After evening" src="https://github.com/user-attachments/assets/73610e0f-4970-431d-af02-710a38953863" />
+<img width="2880" height="1600" alt="New UI AI Analysis" src="https://github.com/user-attachments/assets/2b785468-1123-4e1a-9c6c-dcf8f0645571" />
+
 
 
 #### Dashboard 
