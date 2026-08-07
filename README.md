@@ -17,7 +17,7 @@ Built with Angular, Spring Boot, PostgreSQL, Docker, and OpenRouter.
 
 - **Frontend:** https://your-frontend-url.onrender.com
 - **Backend API:** https://your-backend-url.onrender.com
-- Demo Video: https://youtu.be/LJh7dDF6jPY
+- **Demo Video:** https://youtu.be/LJh7dDF6jPY
 
 ## Source Code
 
