@@ -13,6 +13,15 @@ Built with Angular, Spring Boot, PostgreSQL, Docker, and OpenRouter.
 ![OpenRouter](https://img.shields.io/badge/OpenRouter-AI-7C3AED)
 
 
+
+
+## Overview
+
+OpsIQ simulates a modern enterprise IT ticketing system.
+Incoming support requests are automatically analyzed using an LLM, categorized, prioritized, summarized, and enriched with suggested troubleshooting steps before being stored in PostgreSQL.
+The application demonstrates full-stack development, REST API design, AI integration, containerization, and cloud deployment.
+
+
 ## Live Demo
 
 - **Frontend:** https://opsiq-ticket-triage.onrender.com
@@ -26,22 +35,6 @@ Built with Angular, Spring Boot, PostgreSQL, Docker, and OpenRouter.
 | Frontend (Angular) | https://github.com/chloehuang2021/opsiq-ticket-triage |
 | Backend (Spring Boot) | https://github.com/chloehuang2021/opsiq-ticket-triage-backend |
 
-
-
-## Overview
-
-OpsIQ simulates a modern enterprise IT ticketing system.
-Incoming support requests are automatically analyzed using an LLM, categorized, prioritized, summarized, and enriched with suggested troubleshooting steps before being stored in PostgreSQL.
-The application demonstrates full-stack development, REST API design, AI integration, containerization, and cloud deployment.
-
-
-## Related Repositories
-
-* Frontend:
-https://github.com/chloehuang2021/opsiq-ticket-triage
-
-* Backend:
-https://github.com/chloehuang2021/opsiq-ticket-triage-backend
 
 ## Features
 
