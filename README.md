@@ -28,12 +28,13 @@ The application demonstrates full-stack development, REST API design, AI integra
 - **Backend API:** https://opsiq-ticket-triage-backend.onrender.com
 - **Demo Video:** https://youtu.be/LJh7dDF6jPY
 
-## Source Code
 
-| Component | Repository |
-|----------|------------|
-| Frontend (Angular) | https://github.com/chloehuang2021/opsiq-ticket-triage |
-| Backend (Spring Boot) | https://github.com/chloehuang2021/opsiq-ticket-triage-backend |
+## Repositories
+
+| Component | Technology | Repository |
+|-----------|------------|------------|
+| Frontend | Angular | https://github.com/chloehuang2021/opsiq-ticket-triage |
+| Backend | Spring Boot | https://github.com/chloehuang2021/opsiq-ticket-triage-backend |
 
 
 ## Features
