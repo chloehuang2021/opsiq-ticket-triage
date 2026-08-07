@@ -114,7 +114,7 @@ https://github.com/chloehuang2021/opsiq-ticket-triage-backend
 
 #### Dashboard 
 
-<img width="936" height="198" alt="Dashboard" src="https://github.com/user-attachments/assets/85b705b5-0ead-4e81-ba72-614dad96ca07" />
+<img width="2688" height="590" alt="New UI Dashboard" src="https://github.com/user-attachments/assets/ec521ae6-170a-4b86-b89f-06b3253eb140" />
 
 
 
