@@ -116,6 +116,9 @@ https://github.com/chloehuang2021/opsiq-ticket-triage-backend
 
 <img width="2688" height="590" alt="New UI Dashboard" src="https://github.com/user-attachments/assets/ec521ae6-170a-4b86-b89f-06b3253eb140" />
 
+#### Saved Tickets
+
+<img width="2880" height="1804" alt="New UI Saved Tickets" src="https://github.com/user-attachments/assets/9de988e4-46ff-4c1c-8f4c-45247dc6ceef" />
 
 
 
@@ -129,7 +132,7 @@ https://github.com/chloehuang2021/opsiq-ticket-triage-backend
 
 
 
-#### Status Updates
+
 
 
 
