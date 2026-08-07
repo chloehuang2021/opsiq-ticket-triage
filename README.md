@@ -37,6 +37,21 @@ The application demonstrates full-stack development, REST API design, AI integra
 | Backend | Spring Boot | https://github.com/chloehuang2021/opsiq-ticket-triage-backend |
 
 
+
+## Tech Stack
+
+
+| Category | Technology |
+|----------|------------|
+| Frontend | Angular, TypeScript, HTML, CSS |
+| Backend | Spring Boot, Java, RESTful API |
+| Database | PostgreSQL, Spring Data JPA |
+| Containerization | Docker, Docker Compose |
+| AI Integration | OpenRouter API, DeepSeek Chat V3 |
+| Deployment | Render |
+| Version Control | Git, GitHub |
+
+
 ## Features
 
 ### AI-Powered Ticket Analysis
@@ -211,20 +226,6 @@ docker compose down
 - One-command local deployment
 
 
-## Tech Stack
-
-
-| Category | Technology |
-|----------|------------|
-| Frontend | Angular, TypeScript, HTML, CSS |
-| Backend | Spring Boot, Java, RESTful API |
-| Database | PostgreSQL, Spring Data JPA |
-| Containerization | Docker, Docker Compose |
-| AI Integration | OpenRouter API, DeepSeek Chat V3 |
-| Deployment | Render |
-| Version Control | Git, GitHub |
-
-
 
 ### Deployment
 
@@ -260,7 +261,6 @@ docker compose down
 
 ## Future Enhancements
 
-- Integrate a production-grade LLM for enhanced ticket analysis
 - Containerize the Angular frontend
 - Deploy the application to AWS
 - Implement a CI/CD pipeline
