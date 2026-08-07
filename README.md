@@ -98,6 +98,12 @@ https://github.com/chloehuang2021/opsiq-ticket-triage-backend
 
 <img width="2880" height="1806" alt="New UI new ticket" src="https://github.com/user-attachments/assets/4e26e849-154a-44df-8250-d062bacc77ad" />
 
+#### Right After Creating a Ticket
+<img width="2880" height="1808" alt="New UI new ticket after saved" src="https://github.com/user-attachments/assets/6007f566-66b2-4f54-9eff-a580f516903e" />
+
+
+
+
 #### AI Analysis 
 
 <img width="2876" height="1806" alt="ticket preview 2 After evening" src="https://github.com/user-attachments/assets/73610e0f-4970-431d-af02-710a38953863" />
