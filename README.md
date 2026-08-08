@@ -1,6 +1,10 @@
 # OpsIQ AI Ticket Triage
 
-A full-stack ticket management application with AI-powered functions that automatically categorize support requests, assign priorities, generate concise summaries, and recommend troubleshooting steps.
+A full-stack ticket management application with AI-powered functions that automatically categorize requests, assign priorities, generate summaries, show status, suggest troubleshooting steps, and show ticket created time & last updated time.
+Incoming support requests are automatically analyzed using AI (Large Language Model / LLM). All ticket information are stored in PostgreSQL.
+
+The application demonstrates full-stack development, REST API design, AI/LLM integration, containerization, and cloud deployment.
+
 
 Built with Angular, Spring Boot, PostgreSQL, Docker, and OpenRouter.
 
@@ -14,12 +18,6 @@ Built with Angular, Spring Boot, PostgreSQL, Docker, and OpenRouter.
 
 
 
-
-## Overview
-
-OpsIQ simulates a modern enterprise IT ticketing system.
-Incoming support requests are automatically analyzed using an LLM, categorized, prioritized, summarized, and enriched with suggested troubleshooting steps before being stored in PostgreSQL.
-The application demonstrates full-stack development, REST API design, AI integration, containerization, and cloud deployment.
 
 
 ## Live Demo
