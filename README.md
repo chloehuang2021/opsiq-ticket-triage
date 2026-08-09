@@ -29,6 +29,7 @@ Built with Angular, Spring Boot, PostgreSQL, Docker, and OpenRouter.
 
 ## Repositories
 
+
 | Component | Technology | Repository |
 |-----------|------------|------------|
 | Frontend | Angular | https://github.com/chloehuang2021/opsiq-ticket-triage |
