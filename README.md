@@ -46,7 +46,7 @@ Built with Angular, Spring Boot, PostgreSQL, Docker, and OpenRouter.
 | Backend | Spring Boot, Java, RESTful API |
 | Database | PostgreSQL, Spring Data JPA |
 | Containerization | Docker, Docker Compose |
-| AI Integration | OpenRouter API, DeepSeek Chat V3 |
+| AI Integration | GPT-5 nano via OpenRouter API
 | Deployment | Render |
 | Version Control | Git, GitHub |
 
