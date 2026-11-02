@@ -1,3 +1,4 @@
+![Uploading Angular Ticketing Architecture with GPT-5 nano.png…]()
 # OpsIQ AI Ticket Triage
 
 A full-stack ticket management application with AI-powered functions that automatically categorize requests, assign priorities, generate summaries, show status, suggest troubleshooting steps, and show ticket created time & last updated time.
