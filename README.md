@@ -1,4 +1,3 @@
-![Uploading Angular Ticketing Architecture with GPT-5 nano.png…]()
 # OpsIQ AI Ticket Triage
 
 A full-stack ticket management application with AI-powered functions that automatically categorize requests, assign priorities, generate summaries, show status, suggest troubleshooting steps, and show ticket created time & last updated time.
@@ -92,6 +91,7 @@ Built with Angular, Spring Boot, PostgreSQL, Docker, and OpenRouter.
 <img width="1774" height="887" alt="Architecture" src="https://github.com/user-attachments/assets/5525a53c-d9b7-406e-bdad-609d64e8f669" />
 
 
+<img width="1774" height="887" alt="Angular Ticketing Architecture with GPT-5 nano" src="https://github.com/user-attachments/assets/fd5c2e48-a88e-4df0-abb7-55543cd3ae9d" />
 
 
 
